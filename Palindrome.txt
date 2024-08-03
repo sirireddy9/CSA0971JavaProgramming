@@ -1,0 +1,23 @@
+import java.util.*;
+class Palindrome
+{
+	public static void main(String arg[]){
+		int n,rem,rev;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n value:");
+		n=sc.nextInt();
+		rev=0;
+		int m=n;
+		while(n!=0){
+			rem=n%10;
+			rev=(rev*10)+rem;
+			n=n/10;
+		}
+		if(rev==m){
+			System.out.println("palindrome number");
+		}
+		else{
+			System.out.println("not palindrome number");
+		}
+	}
+}
