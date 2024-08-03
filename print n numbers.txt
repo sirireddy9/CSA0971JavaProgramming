@@ -1,0 +1,15 @@
+import java.util.*;
+class display
+{
+	public static void main(String arg[]){
+		int n,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n value:");
+		n=sc.nextInt();
+		i=0;
+		while(i<=n){
+		System.out.println(i);
+		i++;
+		}
+	}
+}
